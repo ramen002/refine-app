@@ -32,8 +32,8 @@ export const authProviderClient: AuthProvider = {
     return {
       success: false,
       error: {
-        name: "LoginError",
-        message: "Invalid username or password",
+        name: "ログインエラー",
+        message: "ユーザー名またはパスワードが無効です",
       },
     };
   },
@@ -82,8 +82,8 @@ export const authProviderClient: AuthProvider = {
     return {
       success: false,
       error: {
-        message: "Register failed",
-        name: "Invalid email or password",
+        message: "登録に失敗しました",
+        name: "無効なメールアドレスまたはパスワードです"
       },
     };
   },

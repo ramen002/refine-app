@@ -12,6 +12,8 @@ import { ColorModeContextProvider } from "@contexts/color-mode";
 import { authProviderClient } from "@providers/auth-provider";
 import { dataProvider } from "@providers/data-provider";
 import { liveProvider } from "@providers/live-provider";
+import i18nProvider from "@providers/i18n-provider";
+import "../i18n";
 import "@refinedev/antd/dist/reset.css";
 
 export const metadata: Metadata = {
@@ -32,7 +34,7 @@ export default function RootLayout({
   const defaultMode = theme?.value === "dark" ? "dark" : "light";
 
   return (
-    (<html lang="en">
+    (<html lang="ja">
       <body>
         <Suspense>
           <GitHubBanner />
@@ -45,6 +47,7 @@ export default function RootLayout({
                     authProvider={authProviderClient}
                     dataProvider={dataProvider}
                     liveProvider={liveProvider}
+                    i18nProvider={i18nProvider}
                     notificationProvider={useNotificationProvider}
                     options={{
                       syncWithLocation: true,

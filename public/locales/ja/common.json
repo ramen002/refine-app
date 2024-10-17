@@ -1,0 +1,171 @@
+{
+  "pages": {
+    "login": {
+      "title": "アカウントにサインイン",
+      "signin": "ログイン",
+      "signup": "サインアップ",
+      "divider": "または",
+      "fields": {
+        "email": "メールアドレス",
+        "password": "パスワード"
+      },
+      "errors": {
+        "validEmail": "無効なメールアドレスです",
+        "requiredEmail": "メールアドレスは必須です",
+        "requiredPassword": "パスワードは必須です"
+      },
+      "buttons": {
+        "submit": "ログイン",
+        "forgotPassword": "パスワードを忘れた場合",
+        "noAccount": "アカウントをお持ちでないですか？",
+        "rememberMe": "ログイン状態を保持"
+      }
+    },
+    "forgotPassword": {
+      "title": "パスワードをお忘れですか？",
+      "fields": {
+        "email": "メールアドレス"
+      },
+      "errors": {
+        "validEmail": "無効なメールアドレスです",
+        "requiredEmail": "メールアドレスは必須です"
+      },
+      "buttons": {
+        "submit": "リセット手順を送信"
+      }
+    },
+    "register": {
+      "title": "アカウントを登録",
+      "fields": {
+        "email": "メールアドレス",
+        "password": "パスワード"
+      },
+      "errors": {
+        "validEmail": "無効なメールアドレスです",
+        "requiredEmail": "メールアドレスは必須です",
+        "requiredPassword": "パスワードは必須です"
+      },
+      "buttons": {
+        "submit": "登録",
+        "haveAccount": "アカウントをお持ちですか？"
+      }
+    },
+    "updatePassword": {
+      "title": "パスワードの更新",
+      "fields": {
+        "password": "新しいパスワード",
+        "confirmPassword": "新しいパスワードの確認"
+      },
+      "errors": {
+        "confirmPasswordNotMatch": "パスワードが一致しません",
+        "requiredPassword": "パスワードは必須です",
+        "requiredConfirmPassword": "パスワードの確認は必須です"
+      },
+      "buttons": {
+        "submit": "更新"
+      }
+    },
+    "error": {
+      "info": "{{resource}}リソースに{{action}}コンポーネントを追加するのを忘れている可能性があります。",
+      "404": "申し訳ありませんが、訪問したページは存在しません。",
+      "resource404": "{{resource}}リソースを作成したことを確認してください。",
+      "backHome": "ホームに戻る"
+    }
+  },
+  "actions": {
+    "list": "リスト",
+    "create": "作成",
+    "edit": "編集",
+    "show": "表示"
+  },
+  "buttons": {
+    "create": "作成",
+    "save": "保存",
+    "logout": "ログアウト",
+    "delete": "削除",
+    "edit": "編集",
+    "cancel": "キャンセル",
+    "confirm": "本当によろしいですか？",
+    "filter": "フィルター",
+    "clear": "クリア",
+    "refresh": "更新",
+    "show": "表示",
+    "undo": "元に戻す",
+    "import": "インポート",
+    "clone": "複製",
+    "notAccessTitle": "アクセス権がありません"
+  },
+  "warnWhenUnsavedChanges": "本当にこのページを離れますか？保存されていない変更があります。",
+  "notifications": {
+    "success": "成功",
+    "error": "エラー (ステータスコード: {{statusCode}})",
+    "undoable": "{{seconds}}秒以内に元に戻せます",
+    "createSuccess": "{{resource}}を作成しました",
+    "createError": "{{resource}}の作成中にエラーが発生しました (ステータスコード: {{statusCode}})",
+    "deleteSuccess": "{{resource}}を削除しました",
+    "deleteError": "{{resource}}の削除中にエラーが発生しました (ステータスコード: {{statusCode}})",
+    "editSuccess": "{{resource}}を編集しました",
+    "editError": "{{resource}}の編集中にエラーが発生しました (ステータスコード: {{statusCode}})",
+    "importProgress": "インポート中: {{processed}}/{{total}}"
+  },
+  "loading": "読み込み中",
+  "tags": {
+    "clone": "複製"
+  },
+  "dashboard": {
+    "title": "ダッシュボード"
+  },
+  "users": {
+    "posts": "ユーザー",
+    "fields": {
+      "id": "ID",
+      "name": "ユーザー名",
+      "picture": "画像",
+      "updated_at": "更新日時",
+      "created_at": "作成日時"
+    },
+    "titles": {
+      "create": "投稿を作成",
+      "edit": "投稿を編集",
+      "list": "投稿一覧",
+      "show": "投稿を表示"
+    }
+  },
+  "posts": {
+    "posts": "投稿",
+    "fields": {
+      "id": "ID",
+      "user_id": "ユーザー名",
+      "text": "書き込み",
+      "picture": "画像",
+      "is_voice": "通話枠",
+      "created_at": "作成日時"
+    },
+    "titles": {
+      "create": "投稿を作成",
+      "edit": "投稿を編集",
+      "list": "投稿一覧",
+      "show": "投稿を表示"
+    }
+  },
+  "table": {
+    "actions": "アクション"
+  },
+  "documentTitle": {
+    "default": "refine",
+    "suffix": " | Refine",
+    "post": {
+      "list": "投稿一覧 | Refine",
+      "show": "#{{id}} 投稿を表示 | Refine",
+      "edit": "#{{id}} 投稿を編集 | Refine",
+      "create": "新しい投稿を作成 | Refine",
+      "clone": "#{{id}} 投稿を複製 | Refine"
+    }
+  },
+  "autoSave": {
+    "success": "保存しました",
+    "error": "自動保存エラー",
+    "loading": "保存中...",
+    "idle": "変更を待機中"
+  }
+}
