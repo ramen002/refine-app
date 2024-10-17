@@ -56,6 +56,12 @@ export default function RootLayout({
                       create: "/users/create",
                       edit: "/users/edit/:id",
                       show: "/users/show/:id"
+                    }, {
+                      name: "posts",
+                      list: "/posts",
+                      create: "/posts/create",
+                      edit: "/posts/edit/:id",
+                      show: "/posts/show/:id"
                     }]}>
                     {children}
                     <RefineKbar />
