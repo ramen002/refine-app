@@ -31,7 +31,7 @@ export default function RootLayout({
   const defaultMode = theme?.value === "dark" ? "dark" : "light";
 
   return (
-    <html lang="en">
+    (<html lang="en">
       <body>
         <Suspense>
           <GitHubBanner />
@@ -50,7 +50,13 @@ export default function RootLayout({
                       useNewQueryKeys: true,
                       projectId: "4dXg7S-24vcya-LAmhS2",
                     }}
-                  >
+                    resources={[{
+                      name: "users",
+                      list: "/users",
+                      create: "/users/create",
+                      edit: "/users/edit/:id",
+                      show: "/users/show/:id"
+                    }]}>
                     {children}
                     <RefineKbar />
                   </Refine>
@@ -60,6 +66,6 @@ export default function RootLayout({
           </RefineKbarProvider>
         </Suspense>
       </body>
-    </html>
+    </html>)
   );
 }
