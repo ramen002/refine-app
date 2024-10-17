@@ -11,6 +11,7 @@ import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { ColorModeContextProvider } from "@contexts/color-mode";
 import { authProviderClient } from "@providers/auth-provider";
 import { dataProvider } from "@providers/data-provider";
+import { liveProvider } from "@providers/live-provider";
 import "@refinedev/antd/dist/reset.css";
 
 export const metadata: Metadata = {
@@ -43,12 +44,14 @@ export default function RootLayout({
                     routerProvider={routerProvider}
                     authProvider={authProviderClient}
                     dataProvider={dataProvider}
+                    liveProvider={liveProvider}
                     notificationProvider={useNotificationProvider}
                     options={{
                       syncWithLocation: true,
                       warnWhenUnsavedChanges: true,
                       useNewQueryKeys: true,
                       projectId: "4dXg7S-24vcya-LAmhS2",
+                      liveMode: "auto",
                     }}
                     resources={[{
                       name: "users",
