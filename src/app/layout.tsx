@@ -13,7 +13,6 @@ import { authProviderClient } from "@providers/auth-provider";
 import { dataProvider } from "@providers/data-provider";
 import { liveProvider } from "@providers/live-provider";
 import i18nProvider from "@providers/i18n-provider";
-import "../i18n";
 import "@refinedev/antd/dist/reset.css";
 
 export const metadata: Metadata = {
